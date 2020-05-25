@@ -20,4 +20,16 @@ class StaticPagesController extends Controller
         return view('static_pages/about');
 //        return "关于页";
     }
+
+    public function test(Request $request) {
+//        $jsonRequestData = $request->get('jsonRequestData');
+//        $input = $request->get('jsonRequestData');
+        $input = $request->all();
+        var_dump($input);
+//        if(!isset($input['jsonRequestData'])) {
+//            echo '参数错误';
+//        }
+//        $jsonRequestData = $input['jsonRequestData'];
+//        echo $jsonRequestData;
+    }
 }
