@@ -13,3 +13,4 @@ yarn-error.log
 .idea
 /storage/.gitignore
 /storage/public/.gitignore
+composer.lock
